@@ -5,6 +5,8 @@ package rbtree;
  *
  * @author skywang
  * @date 2013/11/07
+ * @editor KnIfER
+ * @date 2017/11/18
  */
 
 public class RBTree<T extends Comparable<T>> {
