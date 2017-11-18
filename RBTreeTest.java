@@ -151,7 +151,7 @@ public static class MyPanel extends JPanel {
         //((Graphics2D)g).drawLine(50, 50, 200, 50);
         final Graphics2D g2 = (Graphics2D)g.create();
         final float ratio = frame.getWidth()*.8f/(tree.maximum() - tree.minimum());
-        final float offset = ((tree.minimum())-10)*ratio;
+        final float offset = tree.minimum()*ratio-25;
         //final float ratioVertival = frame.getHeight()*1.f/(tree.maximum() - tree.minimum());
         g2.setFont(new Font(null, Font.ITALIC, 25));
         tree.SetInOrderDo(new inOrderDo(){
